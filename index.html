@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Bán Áo Nam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="kichi">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#Home">Trang Chủ</a></li>
+                    <li><a href="#Products">Sản Phẩm</a></li>
+                    <li><a href="#About">Giới Thiệu</a></li>
+                    <li><a href="#Contact">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="product-content">
+            <div class="video-container">
+                <video width="100%" controls>
+                    <source src="" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ video tag.
+                </video>
+            </div>
+            <div class="product-info">
+                <h3>Hướng Dẫn Chọn Áo Nam</h3>
+                <p>
+                    Video hướng dẫn cách chọn áo nam phù hợp với phong cách và vóc dáng của bạn. Tìm hiểu cách phối đồ và chọn chất liệu áo phù hợp.
+                </p>
+                <button>Tìm Hiểu Thêm</button>
+            </div>
+        </section>
+
+        <section class="product-list" id="products">
+            <article class="product-item">
+                <img src="img/aoThun.jpg" alt="Áo Thun">
+                <h3>Áo Thun</h3>
+                <p>Giá: 200,000 VND</p>
+                <button>Mua Ngay</button>
+            </article>
+            <article class="product-item">
+                <img src="img/aoSomi.jpg" alt="Áo Sơ Mi">
+                <h3>Áo Sơ Mi</h3>
+                <p>Giá: 300,000 VND</p>
+                <button>Mua Ngay</button>
+            </article>
+            <article class="product-item">
+                <img src="img/aoKhoac.jpg" alt="Áo Khoác">
+                <h3>Áo Khoác</h3>
+                <p>Giá: 450,000 VND</p>
+                <button>Mua Ngay</button>
+            </article>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Thông Tin Bổ Sung</h2>
+        <p>
+            Quý khách cần thêm thông tin gì liên quan thì tiếp phần bên dưới! Xin Cảm Ơn
+        </p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2024 Trang Web Bán Áo Nam. Mọi quyền được bảo lưu.</p>
+    </footer>
+
+    <script>
+        const lotte = document.querySelector(".lotte");
+        const menu = document.querySelector(".menu");
+
+        lotte.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
